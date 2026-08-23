@@ -1,0 +1,98 @@
+.calendar-layout-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 25px;
+}
+
+@media (max-width: 992px) {
+    .calendar-layout-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* TIMELINE LAYOUT */
+.timeline {
+    position: relative;
+    padding-left: 30px;
+    margin-top: 15px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 9px;
+    top: 5px;
+    bottom: 5px;
+    width: 2px;
+    background-color: var(--border-color);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.timeline-badge {
+    position: absolute;
+    left: -30px;
+    top: 6px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    box-shadow: 0 0 0 4px #ffffff;
+    z-index: 1;
+}
+
+.badge-test { background-color: #F3E8FF; }
+.badge-assignment { background-color: #FEF3C7; }
+.badge-meeting { background-color: #E0F2FE; }
+.badge-holiday { background-color: #D1FAE5; }
+.badge-event { background-color: var(--light-blue); }
+
+.timeline-content {
+    padding: 15px 20px;
+}
+
+.timeline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.timeline-type-tag {
+    display: inline-block;
+    padding: 2px 6px;
+    font-size: 9px;
+    font-weight: 700;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.tag-test { background-color: #FAF5FF; color: #701A75; border: 1px solid #F3E8FF; }
+.tag-assignment { background-color: #FFFDF5; color: #B45309; border: 1px solid #FEF3C7; }
+.tag-meeting { background-color: #F0F9FF; color: #0369A1; border: 1px solid #E0F2FE; }
+.tag-holiday { background-color: #ECFDF5; color: #047857; border: 1px solid #D1FAE5; }
+
+.timeline-date {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--secondary-text);
+}
+
+.timeline-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--dark-blue);
+    margin-bottom: 4px;
+}
+
+.timeline-desc {
+    font-size: 12px;
+    color: var(--text-color);
+    line-height: 1.4;
+}

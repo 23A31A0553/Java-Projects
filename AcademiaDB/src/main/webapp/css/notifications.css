@@ -1,0 +1,118 @@
+.notifications-header-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.notifications-header-panel h2 {
+    color: var(--dark-blue);
+    font-size: 20px;
+}
+
+.header-details p {
+    font-size: 13px;
+    color: var(--secondary-text);
+    margin-top: 4px;
+}
+
+.btn-mark-all {
+    background-color: var(--primary-blue);
+}
+
+.btn-mark-all:hover {
+    background-color: var(--dark-blue);
+}
+
+/* LIST CARDS */
+.notifications-list-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.notification-item-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    position: relative;
+    border-left: 4px solid transparent;
+}
+
+.notif-bullet-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #CBD5E1;
+    flex-shrink: 0;
+}
+
+.notif-content-area {
+    flex: 1;
+}
+
+.notif-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.notif-msg {
+    font-size: 13px;
+    color: var(--secondary-text);
+    margin-top: 4px;
+}
+
+.notif-timestamp {
+    font-size: 11px;
+    color: #94A3B8;
+    margin-top: 6px;
+    display: inline-block;
+}
+
+.unread-notification {
+    background-color: #F8FAFC;
+    border-left-color: var(--primary-blue);
+}
+
+.unread-notification .notif-bullet-indicator {
+    background-color: var(--primary-blue);
+}
+
+.unread-notification .notif-title {
+    color: var(--dark-blue);
+}
+
+.read-indicator-tag {
+    font-size: 11px;
+    font-weight: 600;
+    color: #94A3B8;
+    text-transform: uppercase;
+}
+
+/* NO NOTIFICATIONS */
+.no-notifications-card {
+    text-align: center;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.no-notif-icon {
+    font-size: 44px;
+    opacity: 0.6;
+}
+
+.no-notifications-card h3 {
+    color: var(--dark-blue);
+    font-size: 18px;
+}
+
+.no-notifications-card p {
+    color: var(--secondary-text);
+    font-size: 14px;
+}

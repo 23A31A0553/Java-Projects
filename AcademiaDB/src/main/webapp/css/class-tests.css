@@ -1,0 +1,83 @@
+.tests-layout-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 25px;
+}
+
+@media (max-width: 992px) {
+    .tests-layout-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.test-title-text {
+    color: var(--dark-blue);
+    font-size: 15px;
+}
+
+.test-desc-text {
+    font-size: 12px;
+    color: var(--secondary-text);
+    margin-top: 4px;
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* STATS ROW */
+.test-stats-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.stats-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    border-top: 1px solid var(--border-color);
+    padding-top: 15px;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100px;
+    background-color: var(--bg-color);
+    padding: 10px;
+    border-radius: var(--border-radius);
+}
+
+.stat-val {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.stat-lbl {
+    font-size: 11px;
+    color: var(--secondary-text);
+    margin-top: 4px;
+    text-transform: uppercase;
+}
+
+.text-success { color: var(--success); }
+.text-danger { color: var(--danger); }
+
+/* MARKS INPUT */
+.input-test-mark {
+    width: 100px;
+    padding: 8px 12px;
+    border: 1px solid #CBD5E1;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 14px;
+    text-align: center;
+}
+
+.input-test-mark:focus {
+    border-color: var(--primary-blue);
+    outline: none;
+}

@@ -1,0 +1,400 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+/* BODY */
+
+body {
+    background: linear-gradient(
+        135deg,
+        #1565c0,
+        #42a5f5
+    );
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+/* TOP BAR */
+
+.top-bar {
+    width: 100%;
+
+    height: 75px;
+
+    background: white;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 10px 35px;
+
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* COLLEGE LOGO */
+
+.college-logo {
+    width: 55px;
+
+    height: 55px;
+
+    object-fit: contain;
+
+    margin-right: 15px;
+}
+
+
+/* COLLEGE NAME */
+
+.college-name {
+    color: #0d47a1;
+}
+
+
+.college-name h1 {
+    font-size: 22px;
+}
+
+
+/* MAIN CONTENT */
+
+.main-content {
+    flex: 1;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 30px 0;
+}
+
+
+.container {
+    width: 400px;
+
+    max-width: 90%;
+}
+
+
+/* LOGIN BOX */
+
+.select-login,
+.login-box {
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.25);
+
+    text-align: center;
+}
+
+
+/* HEADINGS */
+
+h2 {
+    color: #0d47a1;
+
+    margin-bottom: 12px;
+}
+
+
+/* DESCRIPTION */
+
+.description {
+    color: #555;
+
+    margin-bottom: 25px;
+
+    line-height: 1.5;
+}
+
+
+/* ROLE BUTTONS */
+
+.role-buttons {
+    display: flex;
+
+    gap: 15px;
+}
+
+
+.role-buttons button {
+    flex: 1;
+
+    padding: 12px;
+
+    background-color: #1565c0;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.role-buttons button:hover {
+    background-color: #0d47a1;
+
+    transform: translateY(-2px);
+}
+
+
+/* LOGIN */
+
+.login-box {
+    display: none;
+
+    text-align: left;
+}
+
+
+.login-box h2,
+.login-box .login-message {
+    text-align: center;
+}
+
+
+.login-message {
+    color: #555;
+
+    margin-bottom: 25px;
+
+    line-height: 1.5;
+}
+
+
+/* SELECTED ROLE */
+
+.selected-role {
+    color: #1565c0;
+
+    font-weight: bold;
+}
+
+
+/* LABEL */
+
+label {
+    display: block;
+
+    font-weight: bold;
+
+    margin-top: 15px;
+
+    margin-bottom: 6px;
+
+    color: #333;
+}
+
+
+/* INPUT */
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+
+    padding: 11px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+
+input:focus {
+    border-color: #1565c0;
+
+    box-shadow:
+        0 0 5px rgba(21, 101, 192, 0.3);
+}
+
+
+/* LOGIN BUTTON */
+
+.login-button {
+    width: 100%;
+
+    margin-top: 22px;
+
+    padding: 12px;
+
+    background-color: #1565c0;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.login-button:hover {
+    background-color: #0d47a1;
+}
+
+
+/* BACK BUTTON */
+
+.back-button {
+    width: 100%;
+
+    margin-top: 12px;
+
+    padding: 10px;
+
+    background-color: #eeeeee;
+
+    color: #333;
+
+    border: none;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.back-button:hover {
+    background-color: #dddddd;
+}
+
+
+/* ERROR MESSAGE */
+
+.error-message {
+    background-color: #ffebee;
+
+    color: #c62828;
+
+    padding: 10px;
+
+    border-radius: 5px;
+
+    margin-bottom: 15px;
+
+    text-align: center;
+
+    font-size: 14px;
+}
+
+
+/* SUCCESS MESSAGE */
+
+.success-message {
+    background-color: #e8f5e9;
+
+    color: #2e7d32;
+
+    padding: 10px;
+
+    border-radius: 5px;
+
+    margin-bottom: 15px;
+
+    text-align: center;
+
+    font-size: 14px;
+}
+
+
+/* FOOTER */
+
+.footer {
+    width: 100%;
+
+    height: 45px;
+
+    background: white;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    box-shadow:
+        0 -2px 8px rgba(0, 0, 0, 0.15);
+
+    color: #555;
+
+    font-size: 13px;
+}
+
+
+.footer p {
+    margin: 0;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .top-bar {
+        padding: 10px 20px;
+    }
+
+
+    .college-logo {
+        width: 45px;
+
+        height: 45px;
+    }
+
+
+    .college-name h1 {
+        font-size: 17px;
+    }
+
+
+    .role-buttons {
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+
+    .container {
+        width: 90%;
+    }
+
+}

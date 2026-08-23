@@ -1,0 +1,269 @@
+/* =====================================================
+   USER MANAGEMENT PAGE
+   BLUE RIDGE UNIVERSITY
+   ===================================================== */
+
+
+/* =====================================================
+   RESET
+   ===================================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+/* =====================================================
+   BODY
+   ===================================================== */
+
+body {
+    background: linear-gradient(135deg, #1565c0, #42a5f5);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =====================================================
+   TOP BAR
+   ===================================================== */
+
+.top-bar {
+    width: 100%;
+    min-height: 75px;
+
+    background: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px 35px;
+
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* =====================================================
+   COLLEGE SECTION
+   ===================================================== */
+
+.college-section {
+    display: flex;
+    align-items: center;
+}
+
+
+/* =====================================================
+   COLLEGE LOGO
+   ===================================================== */
+
+.college-logo {
+    width: 55px;
+    height: 55px;
+
+    object-fit: contain;
+
+    margin-right: 15px;
+}
+
+
+/* =====================================================
+   COLLEGE NAME
+   ===================================================== */
+
+.college-section h1 {
+    color: #0d47a1;
+    font-size: 22px;
+    margin-bottom: 3px;
+}
+
+
+.college-section p {
+    color: #666;
+    font-size: 12px;
+}
+
+
+/* =====================================================
+   ADMIN SECTION
+   ===================================================== */
+
+.admin-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* =====================================================
+   DASHBOARD BUTTON
+   ===================================================== */
+
+.profile-button {
+    text-decoration: none;
+
+    background: #1565c0;
+    color: white;
+
+    padding: 9px 15px;
+
+    border-radius: 6px;
+
+    font-size: 13px;
+}
+
+
+.profile-button:hover {
+    background: #0d47a1;
+}
+
+
+/* =====================================================
+   LOGOUT BUTTON
+   ===================================================== */
+
+.logout-button {
+    text-decoration: none;
+
+    background: #d32f2f;
+    color: white;
+
+    padding: 9px 15px;
+
+    border-radius: 6px;
+
+    font-size: 13px;
+}
+
+
+.logout-button:hover {
+    background: #b71c1c;
+}
+
+
+/* =====================================================
+   MAIN CONTENT
+   ===================================================== */
+
+.main-content {
+    flex: 1;
+
+    width: 100%;
+
+    padding: 35px 25px;
+}
+
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+
+.footer {
+    width: 100%;
+    min-height: 45px;
+
+    background: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow:
+        0 -2px 8px rgba(0, 0, 0, 0.15);
+
+    color: #555;
+
+    font-size: 13px;
+}
+
+
+.footer p {
+    margin: 0;
+}
+
+
+/* =====================================================
+   RESPONSIVE TOP BAR
+   ===================================================== */
+
+@media (max-width: 750px) {
+
+    .top-bar {
+        padding: 10px 20px;
+    }
+
+
+    .college-logo {
+        width: 45px;
+        height: 45px;
+    }
+
+
+    .college-section h1 {
+        font-size: 17px;
+    }
+
+
+    .college-section p {
+        font-size: 10px;
+    }
+
+
+    .admin-section {
+        gap: 5px;
+    }
+
+
+    .profile-button,
+    .logout-button {
+        padding: 8px 10px;
+        font-size: 11px;
+    }
+
+
+    .main-content {
+        padding: 25px 15px;
+    }
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+   ===================================================== */
+
+@media (max-width: 500px) {
+
+    .top-bar {
+        flex-direction: column;
+        gap: 10px;
+        padding: 12px;
+    }
+
+
+    .college-section {
+        width: 100%;
+        justify-content: center;
+    }
+
+
+    .admin-section {
+        width: 100%;
+        justify-content: center;
+    }
+
+
+    .college-section h1 {
+        font-size: 15px;
+    }
+
+
+    .college-section p {
+        font-size: 9px;
+    }
+}

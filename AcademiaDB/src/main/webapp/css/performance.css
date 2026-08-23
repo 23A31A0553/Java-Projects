@@ -1,0 +1,152 @@
+.select-student-form {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.select-student-form select {
+    padding: 8px 12px;
+    border-radius: var(--border-radius);
+    border: 1px solid #CBD5E1;
+    font-family: inherit;
+    font-size: 14px;
+    min-width: 250px;
+}
+
+.analytics-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.performance-details-row {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.student-meta-profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.avatar-meta {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--light-blue);
+    color: var(--primary-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.student-meta-profile h3 {
+    font-size: 18px;
+    color: var(--dark-blue);
+}
+
+.meta-sub {
+    font-size: 12px;
+    color: var(--secondary-text);
+    margin-top: 2px;
+}
+
+/* RATING CARDS COLOR CODES */
+.overall-health-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-left: 6px solid transparent;
+}
+
+.overall-health-card .health-lbl {
+    font-size: 11px;
+    color: var(--secondary-text);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.overall-health-card .health-val {
+    font-size: 32px;
+    font-weight: 800;
+    margin: 4px 0;
+}
+
+.overall-health-card .health-desc {
+    font-size: 12px;
+    color: var(--secondary-text);
+}
+
+.overall-health-card.rating-good {
+    border-left-color: var(--success);
+    background-color: #ECFDF5;
+}
+.overall-health-card.rating-good .health-val { color: var(--success); }
+
+.overall-health-card.rating-warning {
+    border-left-color: var(--warning);
+    background-color: #FFF7ED;
+}
+.overall-health-card.rating-warning .health-val { color: var(--warning); }
+
+.overall-health-card.rating-critical {
+    border-left-color: var(--danger);
+    background-color: #FEF2F2;
+}
+.overall-health-card.rating-critical .health-val { color: var(--danger); }
+
+/* PROGRESS ROWS */
+.bar-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin-top: 15px;
+}
+
+.progress-row {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.progress-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.bar-label {
+    color: var(--secondary-text);
+}
+
+.bar-value {
+    color: var(--primary-blue);
+}
+
+.progress-track {
+    width: 100%;
+    height: 12px;
+    background-color: #E2E8F0;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    border-radius: 6px;
+    transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fill-attendance { background-color: var(--primary-blue); }
+.fill-assignment { background-color: var(--warning); }
+.fill-test { background-color: #8B5CF6; } /* Purple */
+
+.bar-status-msg {
+    font-size: 11px;
+    font-weight: 500;
+}

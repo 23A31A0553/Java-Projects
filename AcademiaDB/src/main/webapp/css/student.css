@@ -1,0 +1,550 @@
+/* =====================================================
+   RESET
+   ===================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f1f5f9;
+    color: #222;
+}
+
+
+/* =====================================================
+   TOP BAR
+   ===================================================== */
+
+.top-bar {
+    width: 100%;
+    min-height: 64px;
+
+    background: #1565c0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 20px;
+
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.18);
+}
+
+
+/* =====================================================
+   UNIVERSITY SECTION
+   ===================================================== */
+
+.college-section {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    height: 64px;
+}
+
+
+/* IMPORTANT
+   Prevent huge logo
+*/
+
+.college-logo {
+    width: 42px !important;
+    height: 42px !important;
+
+    max-width: 42px !important;
+    max-height: 42px !important;
+
+    min-width: 42px !important;
+    min-height: 42px !important;
+
+    object-fit: contain;
+
+    border-radius: 50%;
+
+    display: block;
+}
+
+
+.college-section h1 {
+    margin: 0;
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    line-height: 1.2;
+}
+
+
+.college-section p {
+    margin: 2px 0 0 0;
+
+    color: rgba(255, 255, 255, 0.85);
+
+    font-size: 10px;
+}
+
+
+/* =====================================================
+   STUDENT SECTION
+   ===================================================== */
+
+.student-section {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+.student-name {
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+
+.logout-button {
+    display: inline-block;
+
+    padding: 7px 15px;
+
+    background: white;
+
+    color: #1565c0;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+.logout-button:hover {
+    background: #eeeeee;
+}
+
+
+/* =====================================================
+   MAIN CONTENT
+   ===================================================== */
+
+.main-content {
+    width: 100%;
+
+    min-height: calc(100vh - 109px);
+
+    padding: 30px 20px 40px;
+}
+
+
+/* =====================================================
+   STUDENT CONTAINER
+   ===================================================== */
+
+.student-container {
+    width: 100%;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+}
+
+
+/* =====================================================
+   CARDS
+   ===================================================== */
+
+.card {
+    width: 100%;
+
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.10);
+
+    margin-bottom: 18px;
+}
+
+
+.card h2 {
+    margin: 0 0 7px 0;
+
+    color: #1565c0;
+
+    font-size: 20px;
+}
+
+
+.card h3 {
+    margin: 0 0 15px 0;
+
+    color: #1565c0;
+
+    font-size: 16px;
+}
+
+
+.card p {
+    margin: 0;
+
+    color: #666;
+
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   PERSONAL DETAILS
+   ===================================================== */
+
+.profile-header {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding-bottom: 15px;
+
+    border-bottom: 1px solid #ddd;
+
+    margin-bottom: 15px;
+}
+
+
+.profile-avatar {
+    width: 45px;
+
+    height: 45px;
+
+    border-radius: 50%;
+
+    background: #e3f2fd;
+
+    color: #1565c0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 20px;
+
+    font-weight: bold;
+}
+
+
+.profile-name {
+    color: #1565c0;
+
+    font-size: 16px;
+
+    font-weight: bold;
+}
+
+
+.profile-id {
+    color: #777;
+
+    font-size: 11px;
+
+    margin-top: 3px;
+}
+
+
+/* =====================================================
+   DETAILS GRID
+   ===================================================== */
+
+.details-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 12px;
+}
+
+
+.detail-item {
+    background: #f7f9fc;
+
+    padding: 12px;
+
+    border-left:
+        3px solid #1565c0;
+
+    border-radius: 5px;
+}
+
+
+.detail-label {
+    display: block;
+
+    color: #777;
+
+    font-size: 10px;
+
+    margin-bottom: 5px;
+}
+
+
+.detail-value {
+    color: #333;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    word-break: break-word;
+}
+
+
+/* =====================================================
+   ACADEMIC DETAILS
+   ===================================================== */
+
+.academic-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 12px;
+}
+
+
+.academic-item {
+    background: #e3f2fd;
+
+    padding: 16px;
+
+    border-radius: 6px;
+
+    text-align: center;
+}
+
+
+.academic-label {
+    display: block;
+
+    color: #777;
+
+    font-size: 10px;
+
+    margin-bottom: 6px;
+}
+
+
+.academic-value {
+    color: #1565c0;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   ACCOUNT INFORMATION
+   ===================================================== */
+
+.account-box {
+    background: #f7f9fc;
+
+    padding: 14px;
+
+    border-radius: 6px;
+}
+
+
+.account-row {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 10px;
+}
+
+
+.account-title {
+    color: #333;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+
+.account-description {
+    color: #777;
+
+    font-size: 10px;
+
+    margin-top: 4px;
+}
+
+
+/* =====================================================
+   STATUS
+   ===================================================== */
+
+.status-badge {
+    display: inline-block;
+
+    padding: 5px 10px;
+
+    border-radius: 15px;
+
+    font-size: 10px;
+
+    font-weight: bold;
+}
+
+
+.status-active {
+    background: #d4edda;
+
+    color: #155724;
+}
+
+
+.status-inactive {
+    background: #f8d7da;
+
+    color: #721c24;
+}
+
+
+/* =====================================================
+   ACCOUNT CREATED
+   ===================================================== */
+
+.created-date {
+    color: #888;
+
+    font-size: 10px;
+
+    margin-top: 10px;
+}
+
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+
+.footer {
+    width: 100%;
+
+    min-height: 45px;
+
+    background: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-top: 1px solid #ddd;
+}
+
+
+.footer p {
+    margin: 0;
+
+    color: #777;
+
+    font-size: 11px;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 700px) {
+
+    .top-bar {
+        min-height: 64px;
+
+        padding: 10px 15px;
+
+        flex-wrap: wrap;
+
+        gap: 10px;
+    }
+
+
+    .college-section {
+        height: auto;
+    }
+
+
+    .college-logo {
+        width: 36px !important;
+        height: 36px !important;
+
+        max-width: 36px !important;
+        max-height: 36px !important;
+
+        min-width: 36px !important;
+        min-height: 36px !important;
+    }
+
+
+    .college-section h1 {
+        font-size: 14px;
+    }
+
+
+    .student-section {
+        margin-left: auto;
+    }
+
+
+    .main-content {
+        padding: 20px 12px 30px;
+    }
+
+
+    .details-grid,
+    .academic-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .student-container {
+        width: 100%;
+    }
+
+}

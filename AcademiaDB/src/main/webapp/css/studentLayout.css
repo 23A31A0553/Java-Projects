@@ -1,0 +1,23 @@
+@import url('teacher.css');
+
+/* Student top bar override / extension */
+.student-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.student-name {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Sidebar navigation item overrides if needed */
+.sidebar-nav li.logout-link a:hover {
+    background-color: #FEE2E2;
+    color: var(--danger);
+}
+
+
+/* Inherits mobile responsive off-canvas layout from teacher.css */
+

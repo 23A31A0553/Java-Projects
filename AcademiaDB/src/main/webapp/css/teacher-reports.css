@@ -1,0 +1,138 @@
+.reports-nav-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 15px 25px;
+}
+
+.reports-tabs {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.tab-link {
+    display: inline-block;
+    padding: 8px 14px;
+    background-color: var(--bg-color);
+    color: var(--secondary-text);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+    transition: all 0.2s ease;
+}
+
+.tab-link:hover {
+    background-color: var(--light-blue);
+    color: var(--primary-blue);
+    border-color: var(--primary-blue);
+}
+
+.tab-link.active {
+    background-color: var(--primary-blue);
+    color: #ffffff;
+    border-color: var(--primary-blue);
+}
+
+.btn-print {
+    background-color: #475569;
+    color: #ffffff;
+}
+
+.btn-print:hover {
+    background-color: #334155;
+}
+
+.print-only-header {
+    display: none;
+}
+
+.report-data-table th {
+    background-color: var(--primary-blue);
+    color: #ffffff;
+}
+
+.performance-badge {
+    display: inline-block;
+    padding: 2px 6px;
+    font-size: 10px;
+    font-weight: 700;
+    border-radius: 4px;
+}
+
+.status-good { background-color: #D1FAE5; color: var(--success); }
+.status-warning { background-color: #FEF3C7; color: var(--warning); }
+.status-critical { background-color: #FEE2E2; color: var(--danger); }
+
+/* PRINT STYLES */
+@media print {
+    .top-bar,
+    .sidebar,
+    .footer,
+    .reports-nav-card,
+    .btn-back,
+    .alert {
+        display: none !important;
+    }
+    
+    body {
+        background-color: #ffffff;
+        color: #000000;
+    }
+    
+    .app-layout {
+        display: block;
+    }
+    
+    .main-content-wrapper {
+        padding: 0;
+        background-color: #ffffff;
+    }
+    
+    .card {
+        box-shadow: none;
+        border: none;
+        padding: 0;
+    }
+    
+    .print-only-header {
+        display: block !important;
+        margin-bottom: 20px;
+    }
+    
+    .print-only-header h2 {
+        color: #000000;
+        font-size: 24px;
+        margin-bottom: 4px;
+    }
+    
+    .print-only-header h3 {
+        font-size: 16px;
+        color: #555555;
+    }
+    
+    .print-only-header p {
+        font-size: 12px;
+        color: #888888;
+        margin-top: 4px;
+    }
+    
+    table {
+        border: 1px solid #000000;
+    }
+    
+    th {
+        background-color: #F1F5F9 !important;
+        color: #000000 !important;
+        border-bottom: 2px solid #000000;
+    }
+    
+    td, th {
+        padding: 10px;
+        border-bottom: 1px solid #E2E8F0;
+    }
+}
