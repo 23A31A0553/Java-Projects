@@ -1,0 +1,47 @@
+🔑 Administrator Logins
+Name	Username	Password	Role
+System Admin	admin	admin123	ADMIN
+
+👨‍🏫 Teacher Logins
+Name				Username	Password	Department
+Dr. Rajesh Kumar		rajesh.kumar	teacher123	Computer Science & Engineering
+Dr. Amit Varma			amit.varma	teacher123	Electronics & Communication
+Dr. Vikram Singh		vikram.singh	teacher123	Mechanical Engineering
+(Pre-existing)			teacher1	teacher123	Computer Science & Engineering
+(Pre-existing)			Begum1		qwertyuiop	Information Technology
+👨‍🎓 Student Logins
+All new student accounts use the default password student123:
+
+Department	Name			Username	Password
+CSE (Sem 7)	Aarav Sharma		aarav.sharma	student123
+CSE (Sem 7)	Vivaan Patel		vivaan.patel	student123
+CSE (Sem 7)	Aditya Verma		aditya.verma	student123
+CSE (Sem 7)	Vihaan Reddy		vihaan.reddy	student123
+CSE (Sem 7)	Arjun Rao		arjun.rao	student123
+CSE (Sem 7)	Sai Krishna		sai.krishna	student123
+CSE (Sem 7)	Reyansh Gupta		reyansh.gupta	student123
+CSE (Sem 7)	Arnav Joshi		arnav.joshi	student123
+CSE (Sem 7)	Krishna Nair		krishna.nair	student123
+CSE (Sem 7)	Ishaan Choudhury	ishaan.choudhury	student123
+ECE (Sem 5)	Diya Menon		diya.menon	student123
+ECE (Sem 5)	Isha Kapoor		isha.kapoor	student123
+ECE (Sem 5)	Ananya Chawla		ananya.chawla	student123
+ECE (Sem 5)	Aadhya Bose		aadhya.bose	student123
+ECE (Sem 5)	Aaradhya Roy		aaradhya.roy	student123
+ECE (Sem 5)	Pihu Sinha		pihu.sinha	student123
+ECE (Sem 5)	Khushi Mishra		khushi.mishra	student123
+ECE (Sem 5)	Shreya Dutt		shreya.dutt	student123
+ECE (Sem 5)	Riya Sen		riya.sen	student123
+ECE (Sem 5)	Ira Mehta		ira.mehta	student123
+ME (Sem 3)	Kabir Gill		kabir.gill	student123
+ME (Sem 3)	Rohan Dhillon		rohan.dhillon	student123
+ME (Sem 3)	Sameer Khan		sameer.khan	student123
+ME (Sem 3)	Armaan Malik		armaan.malik	student123
+ME (Sem 3)	Aryan Sood		aryan.sood	student123
+ME (Sem 3)	Dhruv Sodhi		dhruv.sodhi	student123
+ME (Sem 3)	Parth Bhasin		parth.bhasin	student123
+ME (Sem 3)	Veer Khanna		veer.khanna	student123
+ME (Sem 3)	Dev Sareen		dev.sareen	student123
+ME (Sem 3)	Karan Kothari		karan.kothari	student123
+(Pre-existing)	student1		student123	student123
+(Pre-existing)	devashish		qwertyuiop
