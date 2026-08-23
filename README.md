@@ -1,1 +1,5 @@
-Java Projects CollectionThis repository serves as a single workspace for all Java applications, utilities, and academic projects designed and developed by Penugonda Devashish, a Computer Science and Engineering (CSE) student.What's Inside:⚙️ Core Java: Implementations of algorithms, data structures, and OOP concepts.🛠️ Desktop/Backend Tools: Individual multi-module sub-projects showcasing database connectivity, file handling, and logic design.🏗️ Structured Workspaces: Managed as a single reposi
+Java Projects CollectionThis repository serves as a single workspace for all Java applications, utilities, and academic projects designed and developed by Penugonda Devashish, a Computer Science and Engineering (CSE) student.
+What's Inside:
+⚙️ Core Java: Implementations of algorithms, data structures, and OOP concepts.
+🛠️ Desktop/Backend Tools: Individual multi-module sub-projects showcasing database connectivity, file handling, and logic design.
+🏗️ Structured Workspaces: Managed as a single reposi
