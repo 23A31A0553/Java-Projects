@@ -1,0 +1,18 @@
+# Eclipse files
+.metadata/
+.settings/
+.project
+.classpath
+.factorypath
+
+# Build / Compiled files
+build/
+bin/
+target/
+*.class
+
+# Log files
+*.log
+
+# Sensitive credentials
+🔑 Administrator Logins.txt
